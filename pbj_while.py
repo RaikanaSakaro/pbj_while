@@ -9,10 +9,11 @@ sandwiches = 0
 #Create while loop for sandwiches
 while bread/2 >= 1 and pb >= 1 and jelly >= 1:
 	sandwiches = sandwiches + 1
+	print "I have enough bread for {0} sandwiches, enough peanut butter for {1} sandwiches, and enough jelly for {2} sandwiches.".format(bread/2, pb, jelly)
+	print "I'm making sandwich #{0}".format(sandwiches)
 	bread = bread - 2
 	pb = pb - 1
 	jelly = jelly - 1
-	print "I'm making sandwich #{0}".format(sandwiches)
 if bread < 2:
 	print "I've run out of bread!"
 if pb < 1:
